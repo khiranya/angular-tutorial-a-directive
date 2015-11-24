@@ -1,3 +1,26 @@
-<html>
-<body> <h1> Hello world </h1></body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+		<title> Angular Js A href Directive Tutorial </title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>		
+</head>
+<body ng-app="">
+
+<h1> Angular Js A href Directive Tutorial </h1>
+
+<p> <input ng-model="value"> </p>
+
+<h2> Link Doesnot Reload </h2>
+<a id="link1" href ng-click="value=10">10</a></br>
+<a id="link2" href="" ng-click="value=11">11</a></br>
+<a id="link4" href="" name="website" ng-click="value=4"> 4</a></br>
+
+<h2> No Link </h2>
+<a id="link5" name="xxxx" ng-click="value=5">www.google.com </a>
+
+<h2> Link, Change Location </h2>
+<a id="link6"  ng-href="{{value}}">www.google.com </a>
+
+</body>
 </html>
